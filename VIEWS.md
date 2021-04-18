@@ -57,7 +57,7 @@
 - zamówienie (zamówione produkty z opcjami i ceną)
 - kwota zamówienia
 
-`/waiter/older/:id`
+`/waiter/order/:id`
 
 - jak powyższa
 

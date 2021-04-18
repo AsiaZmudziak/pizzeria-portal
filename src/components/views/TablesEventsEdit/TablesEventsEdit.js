@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './WaiterOrderNew.module.scss';
+import styles from './TablesEventsEdit.module.scss';
 import Subtitle from '../../common/Subtitle/Subtitle';
 import Title from '../../common/Title/Title';
 import Paper from '@material-ui/core/Paper';
@@ -16,23 +16,22 @@ function createData(details, products) {
 }
 
 const rows = [
-  createData('Table No.', null),
-  createData('Menu Products', null),
-  createData('Options', null),
-  createData('Subtotal', null),
-  createData('Total Price', null),
+  createData('Table No.', 1),
+  createData('Date', '13.05.2021'),
+  createData('Time', '18:00-20:00'),
+  createData('People', 5),
 ];
 
-const WaiterOrderNew = () => (
+const TablesEventEdit = () => (
   <div className={styles.component}>
     <CssBaseline />
-    <Title>Waiter New Order</Title>
+    <Title>Tables Edit Event</Title>
     <Paper className={styles.component}>
       <Table className={styles.table} size='small'>
         <TableHead>
           <TableRow>
             <TableCell align='left'>
-              <Subtitle>Order no. ___</Subtitle>
+              <Subtitle>Event no. 33</Subtitle>
             </TableCell>
             <TableCell />
             <TableCell />
@@ -51,7 +50,7 @@ const WaiterOrderNew = () => (
                   color='primary'
                   variant='outlined'
                 >
-                  Add
+                  Edit
                 </Button>
               </TableCell>
             </TableRow>
@@ -62,4 +61,4 @@ const WaiterOrderNew = () => (
   </div>
 );
 
-export default WaiterOrderNew;
+export default TablesEventEdit;

@@ -9,12 +9,12 @@ import MainLayout from './components/layout/MainLayout/MainLayout';
 import Dashboard from './components/views/Dashboard/Dashboard';
 import Login from './components/views/Login/Login';
 import Tables from './components/views/Tables/Tables';
-import TablesBookingId from './components/views/TablesBookingId/TablesBookingId';
+import TablesBookingEdit from './components/views/TablesBookingEdit/TablesBookingEdit';
 import TablesBookingNew from './components/views/TablesBookingNew/TablesBookingNew';
-import TablesEventsId from './components/views/TablesEventsId/TablesEventsId';
+import TablesEventsEdit from './components/views/TablesEventsEdit/TablesEventsEdit';
 import TablesEventsNew from './components/views/TablesEventsNew/TablesEventsNew';
 import Waiter from './components/views/Waiter/Waiter';
-import WaiterOrderId from './components/views/WaiterOrderId/WaiterOrderId';
+import WaiterOrderEdit from './components/views/WaiterOrderEdit/WaiterOrderEdit';
 import WaiterOrderNew from './components/views/WaiterOrderNew/WaiterOrderNew';
 import Kitchen from './components/views/Kitchen/Kitchen';
 
@@ -50,18 +50,18 @@ function App() {
               />
               <Route
                 exact
-                path={`${process.env.PUBLIC_URL}/tables/booking/:id`}
-                component={TablesBookingId}
+                path={`${process.env.PUBLIC_URL}/tables/bookings/booking/:id`}
+                component={TablesBookingEdit}
               />
               <Route
                 exact
-                path={`${process.env.PUBLIC_URL}/tables/booking/new`}
+                path={`${process.env.PUBLIC_URL}/tables/bookings/new`}
                 component={TablesBookingNew}
               />
               <Route
                 exact
-                path={`${process.env.PUBLIC_URL}/tables/events/:id`}
-                component={TablesEventsId}
+                path={`${process.env.PUBLIC_URL}/tables/events/event/:id`}
+                component={TablesEventsEdit}
               />
               <Route
                 exact
@@ -75,8 +75,8 @@ function App() {
               />
               <Route
                 exact
-                path={`${process.env.PUBLIC_URL}/waiter/order/:id`}
-                component={WaiterOrderId}
+                path={`${process.env.PUBLIC_URL}/waiter/orders/order/:id`}
+                component={WaiterOrderEdit}
               />
               <Route
                 exact
@@ -95,5 +95,4 @@ function App() {
     </BrowserRouter>
   );
 }
-
 export default App;

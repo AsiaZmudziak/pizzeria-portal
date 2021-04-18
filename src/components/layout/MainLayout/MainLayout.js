@@ -9,13 +9,13 @@ import Container from '@material-ui/core/Container';
 const MainLayout = ({ children }) => (
   <div className='MainLayout'>
     <AppBar>
-      <Container maxWidth="lg">
+      <Container maxWidth='lg'>
         <Toolbar disableGutters>
           <PageNav />
         </Toolbar>
       </Container>
     </AppBar>
-    <Container maxWidth="lg">
+    <Container maxWidth='lg'>
       <Toolbar />
       {children}
     </Container>
