@@ -28,7 +28,7 @@ const theme = createMuiTheme({
 
 function App() {
   return (
-    <BrowserRouter basename={'/panel'}>
+    <BrowserRouter>
       <StylesProvider injectFirst>
         <ThemeProvider theme={theme}>
           <MainLayout>
